@@ -16,10 +16,14 @@ body {
   max-height: 100vh;
   margin-top: 0;
   
+  background-image: url(assets/background-01.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  
   
 }
 
-.background-pattern-large {
+/* .background-pattern-large {
   width: 1440px;
   height: 1440px;
   border-radius: 50%;
@@ -47,6 +51,8 @@ body {
   background: #E6E6FF;
   z-index: -2;
 }
+
+ */
 
 
 header {

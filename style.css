@@ -9,18 +9,18 @@
 html {
   font-family: 'MyWebFont', SimplonBPMono-Regular, sans-serif;
   font-size: 10pt;
-  color: black;
+  color: #444;
 }
 
 body {
-  max-width: 1280px;
+  max-width: 940px;
   margin: 0 auto;
   background-color: white;
   
 }
 
 header {
-  margin: 20px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -35,6 +35,7 @@ main {
 .top-nav {
   max-width: 500px;
   margin: 20px;
+  margin-right: 0px;
   padding-left: 0;
   float: right;
   text-decoration: none;
@@ -77,10 +78,11 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
   color: #8c8cf4;
   background-color: transparent;
 }
+
 
 
 footer {
@@ -102,28 +104,22 @@ footer {
 /* PROJECTS PAGE STYLING STARTS HERE*/
 
 .row {
-  margin: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   flex-flow: row;
   flex-flow: wrap;
-
-  
-  
 }
 
 .row .column {
   flex: auto;
   width: 200px;
-  margin: 10px;
-  
   
 }
 
 .row .column img {
-  margin: 10px;
-  width: 100%;
+  margin: 20px;
+  width: 94%;
   height: auto;
   box-shadow: 0px 5px 5px 5px rgba(128,128,128, 0.3);
 }
@@ -137,11 +133,18 @@ h3 {
 }
 .programs {
   padding-left: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .programs li {
   display: inline-block;
+  
+}
+
+.programs-box h3 {
+  font-size: 14px;
+  color: dimgray;
+  text-align: left;
   
 }
 
@@ -153,7 +156,6 @@ h3 {
 }
 
 .button {
-  
   width: 30px;
   padding: 20px;
   background-image: url(assets/arrow.svg);
@@ -166,7 +168,8 @@ h3 {
 }
 
 .keywords {
-  text-align: center;
+  padding-left: 0;
+  text-align: left;
 }
 
 .keywords li{
@@ -174,9 +177,9 @@ h3 {
   
 }
 
-.programs-box {
-  margin-top: 100px;
-}
+
+
+
 @media (max-width: 500px) {
   .row .column {
     margin: 0;
@@ -185,6 +188,11 @@ h3 {
   .row {
     padding: 0px;
   }
+  
+  .row .column img {
+    width: 100%;
+
+}
 }
 /*.row {
   max-width: 1000px;
@@ -343,14 +351,21 @@ input[type=submit]:hover {
 
 /* ATM APP PROJECT STRATS HERE*/
 
+.atm-main {
+  max-width: 900px;
+}
 
+.project-row p {
+  padding-left: 0px;
+  text-align: left;
+  line-height: 18pt;
+}
 
-.project-row p{
+.next-button p {
   
   padding-right: 40px;
   padding-left: 40px;
-  text-align: center;
-  line-height: 18pt;
+  
 }
 
 
@@ -359,8 +374,8 @@ input[type=submit]:hover {
 }
 
 .project-column img {
+  margin-bottom: 40px;
   width: 100%;
-  margin: 10px;
   box-shadow: 0px 5px 5px 5px rgba(128,128,128, 0.1);
 }
 
