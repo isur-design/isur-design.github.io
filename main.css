@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('SimplonBPMono-Regular.otf'); }
+
+html {
+  font-family: 'MyWebFont', SimplonBPMono-Regular, sans-serif;
+  font-size: 12pt;
+  color: #000;
+}
+
+body {
+  max-height: 100vh;
+  margin-top: 0;
+  
+  
+}
+
+.background-pattern-large {
+  width: 1440px;
+  height: 1440px;
+  border-radius: 50%;
+  position: relative;
+  
+  top: -800px;
+  right: -200px;
+  
+  
+  background: linear-gradient(to right, rgba(204,204,253,100), rgba(98,98,244,100));
+    
+  z-index: -1;
+}
+
+.background-pattern-small {
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  position: relative;
+  
+  top: -1800px;
+  left: -300px;
+  
+  
+  background: #E6E6FF;
+  z-index: -2;
+}
+
+
+header {
+  margin: 10px auto;
+  text-align: center;
+  
+  top: -2200px;
+  position: relative;
+  
+}
+
+.logo {
+  margin: 50px auto;
+  padding-top: 40px;
+  
+}
+
+/*.icon {
+  padding: 80px;
+  
+  background-image: url(assets/logo.svg);
+  background-repeat: no-repeat;
+  
+}
+
+*/
+
+main {
+  position: relative;
+  top: -2200px;
+}
+
+footer {
+  margin: 0;
+  position: relative;
+  top: -2300px;
+}
+
+nav {
+  margin: 0px;
+  
+}
+
+ul {
+  
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-left: 0px;
+  text-align: center;
+  
+  
+}
+
+li {
+  margin: 20px;
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  color: rgba(98,98,244,100);
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.slogan {
+  margin: 40px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 60px;
+  color: #E6E6FF;
+  font-family: sans-serif;
+  font-style: italic;
+}
