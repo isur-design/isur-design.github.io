@@ -18,7 +18,9 @@ body {
   
   background-image: url(assets/background-01.svg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  
+  z-index: -2;
   
   
 }
@@ -58,16 +60,21 @@ body {
 header {
   margin: 10px auto;
   text-align: center;
-  
-  top: -2200px;
-  position: relative;
+  top: 0px;
+  left: 40px;
   
 }
+
+
 
 .logo {
   margin: 50px auto;
   padding-top: 40px;
   
+}
+
+main {
+  margin-top: 100px;
 }
 
 /*.icon {
@@ -80,15 +87,10 @@ header {
 
 */
 
-main {
-  position: relative;
-  top: -2200px;
-}
 
 footer {
   margin: 0;
-  position: relative;
-  top: -2300px;
+  
 }
 
 nav {
@@ -98,7 +100,7 @@ nav {
 
 ul {
   
-  margin-top: 100px;
+  margin-top: 0px;
   padding-top: 50px;
   padding-left: 0px;
   text-align: center;
