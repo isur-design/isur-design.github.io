@@ -103,6 +103,7 @@ footer {
 .row {
   display: flex;
   flex-wrap: wrap;
+  max-width: 940px;
 }
 
 .row .column {
@@ -169,21 +170,26 @@ h3 {
   
 }
 
-@media (max-width: 500px) {
+@media (max-width: 660px) {
+  .row {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
   .row .column {
     margin: 0;
     width: 100%
   }
   
-  .row {
-    padding: 0px;
+  .row .column img {
+    margin-bottom: 0px;
+    margin: 10px;
   }
   
-  .row .column img {
-    
+  
 
-}
-}
 
 
 /* CONTACT PAGE STYLING STARTS HERE*/
@@ -299,7 +305,7 @@ input[type=submit]:hover {
 
 /* ATM APP PROJECT STRATS HERE*/
 
-.atm-main {
+.projects-main {
   max-width: 900px;
 }
 
@@ -327,9 +333,9 @@ input[type=submit]:hover {
 
 
 @media (max-width: 800px) {
-  body {
+  .projects-main {
     max-width: 800px;
-    margin: 40px 40px auto;
+    margin: 20px 20px auto;
     
   }
   
@@ -344,9 +350,9 @@ input[type=submit]:hover {
   
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   
-  body {
+  .projects-main {
     max-width: 600px;
     margin: 10px;
     
