@@ -291,11 +291,9 @@ h3 {
 .project-column img {
   margin-bottom: 40px;
   width: 100%;
-  box-shadow: 0px 5px 5px 5px rgba(128,128,128, 0.1);
+  box-shadow: 0px 0px 15px 3px rgba(128,128,128,.3);
 }
-
-
-
+  
 @media (max-width: 800px) {
   .projects-main {
     max-width: 800px;
