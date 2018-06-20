@@ -25,37 +25,6 @@ body {
   
 }
 
-/* .background-pattern-large {
-  width: 1440px;
-  height: 1440px;
-  border-radius: 50%;
-  position: relative;
-  
-  top: -800px;
-  right: -200px;
-  
-  
-  background: linear-gradient(to right, rgba(204,204,253,100), rgba(98,98,244,100));
-    
-  z-index: -1;
-}
-
-.background-pattern-small {
-  width: 800px;
-  height: 800px;
-  border-radius: 50%;
-  position: relative;
-  
-  top: -1800px;
-  left: -300px;
-  
-  
-  background: #E6E6FF;
-  z-index: -2;
-} */
-
-
-
 
 header {
   margin: 10px auto;
@@ -77,19 +46,9 @@ main {
   margin-top: 100px;
 }
 
-/*.icon {
-  padding: 80px;
-  
-  background-image: url(assets/logo.svg);
-  background-repeat: no-repeat;
-  
-}
-
-*/
-
 
 footer {
-  margin: 0;
+  margin-top: 200px;
   
 }
 
