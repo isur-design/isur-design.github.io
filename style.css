@@ -91,7 +91,7 @@ footer {
   color: skyblue;
 }
 
-/* PROJECTS PAGE STYLING STARTS HERE*/
+/* ***************** PROJECTS PAGE STYLING STARTS HERE ***********************/
 
 .row {
   display: flex;
@@ -110,6 +110,7 @@ footer {
   margin-bottom: 20px;
   box-shadow: 0px 0px 15px 3px rgba(128,128,128, 0.1);
   width: 100%;
+  opacity: 1;
 }
 
 h3 {
@@ -119,6 +120,36 @@ h3 {
   text-align: center;
   
 }
+
+.column a {
+  text-decoration: none;
+  
+  
+}
+.project-title {
+  position: relative;
+  
+  bottom: 350px;
+  font-size: 2em;
+  
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  visibility: hidden;
+  color: #8c8cf4;
+}
+
+/* ***************** HOVERING EFFECTS STARTS HERE ***********************/
+
+.column a:hover .project-title{
+  visibility: visible;
+}
+
+.column a:hover img{
+  opacity: .2;
+}
+/* ***************** ***********************/
+
 .programs {
   padding-left: 0;
   text-align: left;
