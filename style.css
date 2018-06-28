@@ -93,25 +93,86 @@ footer {
 
 /* ***************** PROJECTS PAGE STYLING STARTS HERE ***********************/
 
-.row {
+.project-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 940px;
 }
 
-.row .column {
-  padding: 10px;
-  flex: auto;
-  width: 50%;
+.project-card {
+  display: block;
+  position: relative;
+  
+  box-shadow: 0px 0px 15px 3px rgba(128,128,128, 0.1);
+  
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.project-card:hover .project-card-title {
+ opacity: 1;
+}
+
+.project-card-title {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(255,255,255,.7);
   
 }
 
-.row .column img {
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 15px 3px rgba(128,128,128, 0.1);
-  width: 100%;
-  opacity: 1;
+.project-card-title p {
+  font-size: 3em; 
+  text-align: center;
+    
+  padding: 0 1em;
+  
+  color: #8c8cf4;
+  line-height: 1.2em;
 }
+
+.project-card-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 660px) {
+  body {
+    max-width: 660px;
+    margin: 10px;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card {
+    width: 100%;
+    
+  }
+  
+  .project-card-title {
+    display: inline;
+    opacity: 1;
+    background-color: transparent;
+  }
+  
+  .project-card-title p {
+  font-size: 1em; 
+  text-align: left;
+  }
+}
+
+
 
 h3 {
   padding: 20px;
@@ -121,41 +182,18 @@ h3 {
   
 }
 
-.column a {
-  text-decoration: none;
-  
-  
-}
-.project-title {
-  position: relative;
-  
-  bottom: 350px;
-  font-size: 2em;
-  
-  text-decoration: none;
-  text-transform: uppercase;
-  
-  visibility: hidden;
-  color: #8c8cf4;
-}
-
-/* ***************** HOVERING EFFECTS STARTS HERE ***********************/
-
-.column a:hover .project-title{
-  visibility: visible;
-}
-
-.column a:hover img{
-  opacity: .2;
-}
-/* ***************** ***********************/
-
 .programs {
   padding-left: 0;
   text-align: left;
 }
 
+.programs-box h3 {
+ padding-left: 0;
+}
+
 .programs li {
+  margin: 0;
+  margin-right: 40px;
   display: inline-block;
   
 }
@@ -190,9 +228,21 @@ h3 {
 }
 
 .keywords li{
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 10px;
   display: inline-block;
+  background-color: rgba(169,169,245,.2);
+  border-radius: 20px;
   
 }
+
+.next-button a {
+  color: #444;
+  text-decoration: none;
+  padding-left: 20px;
+}
+  
 
 @media (max-width: 660px) {
   body {
@@ -202,39 +252,31 @@ h3 {
     display: flex;
     flex-direction: column;
   }
-  .row {
+  .project-card {
     width: 100%;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
   }
   
-  .row .column {
-    margin: 0;
-    width: 100%
-  }
   
-  .row .column img {
-    margin-bottom: 0px;
-    margin: 10px;
-  }
 }
-  
+
+
 
 
 
 /* CONTACT PAGE STYLING STARTS HERE*/
 
  .contact-box h2 {
-  margin-top: 100px;
+  margin-top: 80px;
+  padding: 20px;
   color: #8c8cf4;
   text-transform: uppercase;
   text-align: center;
+  line-height: 1.8em;
   }
 
  .contacts {
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   
 }
 
@@ -275,6 +317,7 @@ h3 {
   }
   .contact-box h2 {
    margin-top: 0px;
+}
 }
 
 @media (max-width: 500px) {
@@ -320,9 +363,9 @@ h3 {
 }
 
 .project-column img {
-  margin-bottom: 40px;
+  margin-bottom: 0;
   width: 100%;
-  box-shadow: 0px 0px 15px 3px rgba(128,128,128,.3);
+  box-shadow: 0px 0px 3px 3px rgba(128,128,128,.0);
 }
   
 @media (max-width: 800px) {
@@ -409,14 +452,6 @@ h3 {
     box-shadow: 0px 0px 2px 0px grey;
 }
  
-  
-  .row .column img {
-    margin: 0;
-  }
-  
-  .project-column img {
-    margin: 0;
-  }
   
 
   
