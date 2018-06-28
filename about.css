@@ -45,9 +45,23 @@ main {
 
 .top-nav li {
   margin: 0;
-  padding: 20px;
+  padding: 0px;
   display: inline-block;
 }
+
+.top-nav a {
+  display: block;
+  padding: 20px;
+  color: dimgray;
+  text-decoration: none;
+}
+
+nav a:hover, nav a.active {
+  color: #8c8cf4;
+  background-color: transparent;
+}
+
+
 
 .logo {
   margin: 20px;
@@ -72,15 +86,7 @@ li {
   list-style: none;
 }
 
-nav a {
-  color: dimgray;
-  text-decoration: none;
-}
 
-nav a:hover, nav a.active {
-  color: #8c8cf4;
-  background-color: transparent;
-}
 
 .social-nav {
   margin: 20px;
@@ -291,10 +297,17 @@ h4 {
     text-align: center;
     
 }
+ 
   .top-nav li {
+    display: block;
     margin: 2px;
+    padding: 0px;
     box-shadow: 0px 0px 2px 0px grey;
 }
+  
+  .top-nav li a {
+    padding: 10px;
+  }
   
   .profile-photo {
     margin-left: 0px;

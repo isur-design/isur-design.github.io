@@ -21,10 +21,7 @@ body {
   background-size: cover;
   
   z-index: -2;
-  
-  
 }
-
 
 header {
   margin: 10px auto;
@@ -34,12 +31,9 @@ header {
   
 }
 
-
-
 .logo {
   margin: 50px auto;
   padding-top: 40px;
-  
 }
 
 main {
@@ -49,12 +43,10 @@ main {
 
 footer {
   margin-top: 200px;
-  
 }
 
 nav {
   margin: 0px;
-  
 }
 
 ul {
@@ -63,8 +55,6 @@ ul {
   padding-top: 50px;
   padding-left: 0px;
   text-align: center;
-  
-  
 }
 
 li {
@@ -80,7 +70,7 @@ a {
 }
 
 a:hover {
-  color: #fff;
+  color: dimgray;
   background-color: transparent;
 }
 
